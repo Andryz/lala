@@ -539,6 +539,16 @@ textarea.not-valid {
 .banner .af-btn span {
     background: none;
 }
+@media screen and (max-width: 1085px) {
+    .banner {
+        background: url(img/bg-header-mob.png) no-repeat right bottom;
+        /*background-position-y: -25px;*/
+        background-size: cover;
+        margin: 68px 0 0;
+        padding: 0 0 72px;
+        border-radius: 0 0 12px 12px;
+    }
+}
 @media screen and (max-width: 767px) {
     .banner {
         background: url(img/bg-header-mob.png) no-repeat right bottom;
@@ -1864,7 +1874,7 @@ body:not(.home-page) .header__menu {
 .about-text__list {
     margin-top: 60px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1188px) {
     .about-banner:before {
         content: none;
     }
