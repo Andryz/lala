@@ -1,0 +1,43 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+html, body {
+	font-family: $font-poppins;
+	background: #191E23;
+	color: #FFFFFF;
+	font-size: 18px;
+	height: 100%;
+	line-height: 28px;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+}
+
+input, textarea, select {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+
+#root, #__next {
+	isolation: isolate;
+}

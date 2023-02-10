@@ -1,0 +1,329 @@
+.contacts {
+	position: relative;
+	padding: 40px 0 52px;
+	background: url("../../../img/flower5.svg") no-repeat 100% -100%;
+	background-size: auto;
+
+	&._no-bg {
+		&::after,
+		&::before {
+			display: none;
+		}
+	}
+
+	&::after {
+		position: absolute;
+		content: "";
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		background: url("../../../img/flower4.svg") no-repeat 60% 180%;
+		background-size: auto;
+	}
+
+	&__form {
+		background: #23282D;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		box-sizing: border-box;
+		max-width: 456px;
+		padding: 48px;
+		border-radius: 12px;
+
+		.input {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 16px;
+
+			span {
+				font-size: 14px;
+				line-height: 20px;
+				color: rgba(255, 255, 255, 0.7);
+				margin-bottom: 4px;
+			}
+
+			input {
+				height: 44px;
+				border-radius: 12px;
+			}
+
+			textarea {
+				height: 140px;
+				resize: none;
+				overflow: hidden;
+				overflow-y: auto;
+				width: 100%;
+				border-radius: 12px;
+			}
+		}
+
+		.title {
+			font-family: $font-saira;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 28px;
+			margin-bottom: 24px;
+		}
+
+		.submit {
+			position: relative;
+			margin-top: 24px;
+
+			input {
+				display: none;
+			}
+		}
+
+		.error {
+			align-items: center;
+			background-color: #f65017;
+			color: #FFFFFF;
+			display: none;
+			font-weight: 700;
+			height: 100%;
+			justify-content: center;
+			left: 0;
+			position: absolute;
+			text-transform: uppercase;
+			top: 0;
+			transition: $transition-03;
+			width: 100%;
+
+			&.is-active {
+				display: flex;
+			}
+		}
+
+		.success {
+			align-items: center;
+			background-color: #61d93f;
+			color: #FFFFFF;
+			display: none;
+			font-weight: 700;
+			height: 100%;
+			justify-content: center;
+			left: 0;
+			position: absolute;
+			text-transform: uppercase;
+			top: 0;
+			transition: $transition-03;
+			width: 100%;
+
+			&.is-active {
+				display: flex;
+			}
+		}
+	}
+
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 72px;
+	}
+
+	&__container {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	&__list {
+		width: calc(50% + 35px);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 118px;
+	}
+
+	&__item {
+		align-items: center;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		display: flex;
+		justify-content: space-between;
+		padding: 20px 0;
+		width: calc(50% - 36px);
+
+		button {
+			border: none;
+			background: none;
+			cursor: pointer;
+		}
+
+		.name {
+			h4 {
+				font-family: $font-poppins;
+				font-size: 24px;
+				font-weight: 600;
+				line-height: 32px;
+			}
+
+			p {
+				color: rgba(255, 255, 255, .5);
+				display: block;
+				font-size: 16px;
+				line-height: 24px;
+				margin-top: 4px;
+			}
+		}
+
+		.mail {
+			margin-left: auto;
+			margin-right: 8px;
+			position: relative;
+		}
+
+		.skype {
+			position: relative;
+			margin-right: 8px;
+		}
+
+		.telegram {
+
+		}
+
+		.icon {
+			svg {
+				path {
+					transition: $transition-03;
+				}
+			}
+		}
+
+		&:nth-child(2n) {
+			margin-left: auto;
+		}
+
+		&:nth-last-child(-n+2),
+		&:last-child {
+			border: none;
+		}
+	}
+
+	.wrap {
+		position: relative;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.icon {
+		&:hover {
+			svg {
+				path {
+					&:first-child {
+						fill: #FF5A00;
+					}
+					&:last-child {
+						stroke: #FF5A00;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1279px){
+	.contacts {
+		&__item {
+			width: calc(50% - 12px);
+		}
+
+		&__list {
+			max-width: 514px;
+		}
+	}
+}
+
+@media screen and (max-width: 1023px){
+	.contacts {
+		&__form {
+			max-width: 100%;
+			position: relative;
+			right: auto;
+			top: auto;
+		}
+
+		&__item {
+			width: 100%;
+		}
+
+		&__list {
+			max-width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 767px){
+	.contacts {
+		padding: 0 0 48px;
+
+		&__form {
+			margin-top: 12px;
+			padding: 32px 24px 44px;
+
+			.submit {
+				margin-top: 20px;
+			}
+
+			.title {
+				margin-bottom: 20px;
+			}
+		}
+
+		&__item {
+			padding: 20px 7px 20px 0;
+
+			.mail {
+				height: 20px;
+				margin-right: 18px;
+				width: 50px;
+
+				svg {
+					height: 100%;
+					width: 100%;
+				}
+			}
+
+			.skype {
+				height: 24px;
+				width: 50px;
+
+				svg {
+					height: 100%;
+					width: 100%;
+				}
+
+				@media screen and (max-width: 767px) {
+					.af-tooltip {
+						transform: translate(-70%,10px);
+					}
+				}
+			}
+			.icon {
+				&:active {
+					svg {
+						path {
+							&:first-child {
+								fill: #FF5A00;
+							}
+							&:last-child {
+								stroke: #FF5A00;
+							}
+						}
+					}
+				}
+			}
+
+			&:nth-last-child(-n+2) {
+				border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+			}
+		}
+
+		&__list {
+			width: 100%;
+			margin-top: 12px;
+		}
+	}
+}

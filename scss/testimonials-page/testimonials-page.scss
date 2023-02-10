@@ -1,0 +1,21 @@
+.testimonials-page {
+	padding: 68px 0 24px;
+
+	.testimonials__list {
+		margin-top: 60px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.testimonials-page {
+		.testimonials__item {
+			&:nth-child(n) {
+				display: block;
+			}
+		}
+
+		.testimonials__list {
+			margin-top: 32px;
+		}
+	}
+}

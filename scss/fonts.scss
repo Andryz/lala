@@ -1,0 +1,69 @@
+/*** Fonts ***/
+/* Saira: https://fonts.google.com/specimen/Saira */
+
+@font-face {
+	font-family:'Saira';
+	src: url('../fonts/saira/Saira-Regular.woff2') format('woff2'),
+	url('../fonts/saira/Saira-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family:'Saira';
+	src: url('../fonts/saira/Saira-Medium.woff2') format('woff2'),
+	url('../fonts/saira/Saira-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+/* Chakra Petch: https://fonts.google.com/specimen/Chakra+Petch */
+@font-face {
+	font-family:'Chakra Petch';
+	src: url('../fonts/chakrapetch/ChakraPetch-Medium.woff2') format('woff2'),
+	url('../fonts/chakrapetch/ChakraPetch-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family:'Chakra Petch';
+	src: url('../fonts/chakrapetch/ChakraPetch-SemiBold.woff2') format('woff2'),
+	url('../fonts/chakrapetch/ChakraPetch-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family:'Chakra Petch';
+	src: url('../fonts/chakrapetch/ChakraPetch-Bold.woff2') format('woff2'),
+	url('../fonts/chakrapetch/ChakraPetch-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Covered By Your Grace';
+	src: url('../fonts/covered/CoveredByYourGrace-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Poppins';
+	src: url('../fonts/poppins/Poppins-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Poppins';
+	src: url('../fonts/poppins/Poppins-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'Poppins';
+	src: url('../fonts/poppins/Poppins-Bold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}

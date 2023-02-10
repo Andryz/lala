@@ -1,0 +1,168 @@
+.our-brands {
+	background: #23282D;
+	margin: -4px 0 0;
+	position: relative;
+	padding: 120px 0 80px;
+
+	&__action {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 504px;
+		margin: 60px 0 0;
+
+		.af-btn {
+			width: 100%;
+		}
+
+		.af-btn_orange {
+			margin-right: 12px;
+		}
+
+		.af-btn_bordered {
+			margin-left: 12px;
+		}
+	}
+
+	&__device {
+		background-image: url("../../../img/device.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 327px;
+		width: 100%;
+	}
+
+	&__inner {
+		display: flex;
+		padding: 64px 0 0;
+		width: 100%;
+	}
+
+	&__inner_mobile {
+		display: none;
+	}
+
+	&__list {
+		margin-top: 50px;
+
+		p {
+			color: #FFFFFF;
+			font-family: $font-poppins;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 22px;
+			margin-bottom: 24px;
+
+			span {
+				color: rgba(255, 255, 255, 0.5);
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 28px;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	&__logo {
+		align-items: center;
+		display: flex;
+
+		p {
+			color: #FFFFFF;
+			display: flex;
+			flex-direction: column;
+			font-family: $font-poppins;
+			font-size: 24px;
+			font-weight: 600;
+			line-height: 32px;
+			margin-left: 24px;
+		}
+	}
+
+	&__column-left {
+		min-width: 552px;
+		width: 100%;
+	}
+
+	&__column-right {
+		width: 100%;
+		padding: 0 0 0 96px;
+	}
+}
+
+@media screen and (max-width: 1279px) {
+	.our-brands {
+		&__column-right {
+			padding: 0 0 0 48px;
+		}
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.our-brands {
+		&__device {
+			background-size: contain;
+		}
+
+		&__column-left {
+			min-width: 50%;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.our-brands {
+		margin: -48px 0 0;
+		padding: 96px 0 48px;
+
+		&__action {
+			margin: 16px 0 0;
+			max-width: 100%;
+
+			.af-btn_orange {
+				margin-right: 4.5px;
+			}
+
+			.af-btn_bordered {
+				margin-left: 4.5px;
+			}
+		}
+
+		&__device {
+			background-position: left;
+			background-size: contain;
+			height: 204px;
+			margin-top: 46px;
+		}
+
+		&__inner {
+			display: none;
+		}
+
+		&__inner_mobile {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__list {
+			margin-top: 48px;
+
+			p {
+				align-items: flex-start;
+				display: flex;
+				flex-direction: column;
+				font-size: 20px;
+				margin-bottom: 20px;
+
+				span {
+					font-size: 18px;
+				}
+			}
+		}
+
+		&__logo {
+			margin-top: 32px;
+		}
+	}
+}

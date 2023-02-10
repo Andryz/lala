@@ -1,0 +1,10 @@
+@keyframes blurOpacity {
+	from {
+		opacity: 0;
+		filter: blur(20px);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0);
+	}
+}

@@ -1,0 +1,29 @@
+@import "fonts";
+@import "vars";
+@import "reset";
+@import "ui-components";
+@import "animation";
+
+// libs
+@import "libs/owl.carousel.min";
+
+
+@import "home/blocks/banner";
+@import "home/blocks/comission";
+@import "home/blocks/contacts";
+@import "home/blocks/faq";
+@import "home/blocks/footer";
+@import "home/blocks/header";
+@import "home/blocks/our-brands";
+@import "home/blocks/testimonials";
+
+
+@import "testimonials-page/testimonials-page";
+@import "terms-page/terms-page";
+
+
+@import "about-page/about-page";
+@import "about-page/blocks/about-banner";
+@import "about-page/blocks/about-text";
+@import "about-page/blocks/about-our-logo";
+@import "about-page/blocks/about-screenshots";
